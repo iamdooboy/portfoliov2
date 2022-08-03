@@ -1,5 +1,6 @@
 import Logo from './logo'
 import NextLink from 'next/link'
+import Image from 'next/image'
 import {
   Container,
   Box,
@@ -20,7 +21,7 @@ import { HamburgerIcon, SunIcon, MoonIcon } from '@chakra-ui/icons'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
-  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+  const inactiveColor = useColorModeValue('#fff', 'whiteAlpha.900')
   return (
     <NextLink href={href} passHref scroll={false}>
       <Link
@@ -44,7 +45,7 @@ const Navbar = props => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#20202380')}
+      bg={useColorModeValue('#38434E', '#20202380')}
       css={{ backdropFilter: 'blur(10px)' }}
       zIndex={2}
       {...props}
@@ -57,12 +58,6 @@ const Navbar = props => {
         align="center"
         justify="space-between"
       >
-        <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing={'tighter'}>
-            <Logo />
-          </Heading>
-        </Flex>
-
         <Stack
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
@@ -72,10 +67,10 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/works" path={path}>
-            Works
+            Duy Le
           </LinkItem>
           <LinkItem href="/posts" path={path}>
-            Posts
+            Contact
           </LinkItem>
           <LinkItem
             target="_blank"
@@ -86,7 +81,6 @@ const Navbar = props => {
             style={{ gap: 4 }}
             pl={2}
           >
-            <HamburgerIcon />
             Source
           </LinkItem>
         </Stack>
