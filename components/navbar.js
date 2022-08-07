@@ -17,7 +17,7 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import { HamburgerIcon, SunIcon, MoonIcon } from '@chakra-ui/icons'
-// import { IoLogoGithub } from 'react-icons/io5'
+import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -81,6 +81,7 @@ const Navbar = props => {
             style={{ gap: 4 }}
             pl={2}
           >
+            <IoLogoGithub />
             Source
           </LinkItem>
         </Stack>

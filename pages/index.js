@@ -18,6 +18,7 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon, SunIcon, MoonIcon, StarIcon } from '@chakra-ui/icons'
 import { Project } from '../components/project'
+import { Footer } from '../components/footer'
 
 const property = {
   imageUrl: 'https://bit.ly/2Z4KKcF',
@@ -53,6 +54,7 @@ const Page = () => {
         <Project />
         <Project />
       </SimpleGrid>
+      <Footer />
     </Container>
   )
 }
