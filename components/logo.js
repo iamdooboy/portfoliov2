@@ -1,7 +1,8 @@
 import Link from 'next/link'
-import Image from 'next/image'
-import { Text, useColorModeValue } from '@chakra-ui/react'
+//import Image from 'next/image'
+import { Text, useColorModeValue, Image } from '@chakra-ui/react'
 import styled from '@emotion/styled'
+import React, { useState } from 'react'
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -10,27 +11,41 @@ const LogoBox = styled.span`
   align-items: center;
   height: 30px;
   line-height: 20px;
-  padding: 10px;
-  img {
-    transition: 200ms ease;
-  }
-  &:hover img {
-    transform: rotate(20deg);
-  }
 `
 
 const Logo = () => {
+  const punk = '/punk.png'
+  const coolPunk = '/punk_with_glasses.png'
+
+  const [image, setImage] = useState(punk)
+
   return (
-    <Link href="/" scroll={false}>
+    <Link
+      href="/"
+      scroll={false}
+      onMouseEnter={() => setImage(coolPunk)}
+      onMouseOut={() => setImage(punk)}
+    >
       <a>
-        <Text
-          color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-          fontFamily='M PLUS Rounded 1c", sans-serif'
-          fontWeight="bold"
-          ml={3}
-        >
-          Duy Le
-        </Text>
+        <LogoBox>
+          <Image
+            width={'40px'}
+            height={'40px'}
+            alt="logo"
+            src={image}
+            onMouseEnter={() => setImage(coolPunk)}
+            onMouseOut={() => setImage(punk)}
+          />
+          <Text
+            pt={2}
+            color={useColorModeValue('white', 'whiteAlpha.900')}
+            fontFamily='M PLUS Rounded 1c", sans-serif'
+            onMouseEnter={() => setImage(coolPunk)}
+            onMouseOut={() => setImage(punk)}
+          >
+            Duy Le
+          </Text>
+        </LogoBox>
       </a>
     </Link>
   )

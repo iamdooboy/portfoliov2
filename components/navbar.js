@@ -1,6 +1,6 @@
 import Logo from './logo'
 import NextLink from 'next/link'
-import Image from 'next/image'
+
 import {
   Container,
   Box,
@@ -8,15 +8,11 @@ import {
   Stack,
   Heading,
   Flex,
-  Menu,
-  MenuItem,
-  MenuList,
-  MenuButton,
   IconButton,
   useColorMode,
   useColorModeValue
 } from '@chakra-ui/react'
-import { HamburgerIcon, SunIcon, MoonIcon } from '@chakra-ui/icons'
+import { SunIcon, MoonIcon } from '@chakra-ui/icons'
 import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
@@ -45,7 +41,7 @@ const Navbar = props => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#38434E', '#011627')}
+      bg={useColorModeValue('#38434E', '#2D3748')}
       css={{ backdropFilter: 'blur(10px)' }}
       zIndex={2}
       {...props}
@@ -58,6 +54,11 @@ const Navbar = props => {
         align="center"
         justify="space-between"
       >
+        <Flex align="center" mr={5}>
+          <Heading as="h1" size="lg">
+            <Logo />
+          </Heading>
+        </Flex>
         <Stack
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
@@ -66,9 +67,6 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/works" path={path}>
-            Duy Le
-          </LinkItem>
           <LinkItem href="/posts" path={path}>
             Contact
           </LinkItem>
@@ -93,34 +91,6 @@ const Navbar = props => {
             icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
             onClick={toggleColorMode}
           ></IconButton>
-
-          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-            <Menu isLazy id="navbar-menu">
-              <MenuButton
-                as={IconButton}
-                icon={<HamburgerIcon />}
-                variant="outline"
-                aria-label="Options"
-              />
-              <MenuList>
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
-                </NextLink>
-                <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink>
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
-                >
-                  View Source
-                </MenuItem>
-              </MenuList>
-            </Menu>
-          </Box>
         </Box>
       </Container>
     </Box>
