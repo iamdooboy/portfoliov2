@@ -37,14 +37,19 @@ const Page = () => {
       <Heading as="h4" size="md" pb={5}>
         About Me
       </Heading>
-      <p>
-        Takuya is a freelance and a full-stack developer based in Osaka with a
-        passion for building digital services/stuff he wants. He has a knack for
-        all things launching products, from planning and designing all the way
-        to solving real-life problems with code. When not online, he loves
-        hanging out with his camera. Currently, he is living off of his own
-        product called{' '}
-      </p>
+      <Text>
+        Hi, I'm Duy (doo-ee). I'm a Web Developer/Designer who enjoys crafting
+        software that is maintainable, scalable, and easy to use. I've worked
+        with a wide variety of tools and frameworks. To avoid spreading myself
+        too thin and clutter, I focus on my favorites:
+      </Text>
+      <br />
+      <Text> UX Design: Sketch, Photoshop, Illustrator</Text>
+      <br />
+      <Text>
+        Development: VanillaJS + ES6, ReactJS, SaSS/SCSS, Chakra UI on the
+        Front-End, and NodeJS, Express and MongoDB on the back end.
+      </Text>
       <Heading as="h4" size="md" py={10}>
         Projects
       </Heading>

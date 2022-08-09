@@ -1,6 +1,5 @@
 import React from 'react'
 import { chakra, Flex, Icon } from '@chakra-ui/react'
-import { FaLinkedinIn } from 'react-icons/fa'
 
 export const Footer = () => {
   return (

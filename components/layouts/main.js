@@ -2,7 +2,6 @@ import Head from 'next/head'
 import { Box, Container, Heading, useColorModeValue } from '@chakra-ui/react'
 import NavBar from '../navbar'
 import Banner from '../banner'
-import Image from 'next/image'
 
 const Main = ({ children, router }) => {
   return (

@@ -38,7 +38,7 @@ export const Project = ({ title, description, imageSrc, imageAlt }) => {
         justifyContent="space-between"
         py={2}
         bg="gray.900"
-        _dark={{ bg: '#2D3748' }}
+        _dark={{ bg: '#011627' }}
         roundedBottom="lg"
         px={'auto'}
       >
