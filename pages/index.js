@@ -44,20 +44,58 @@ const Page = () => {
         too thin and clutter, I focus on my favorites:
       </Text>
       <br />
-      <Text> UX Design: Sketch, Photoshop, Illustrator</Text>
+      <Text>
+        UX Design:{' '}
+        <Heading as="span" fontSize="sm" letterSpacing="wider">
+          Sketch, Photoshop, Illustrator
+        </Heading>
+      </Text>
       <br />
       <Text>
-        Development: VanillaJS + ES6, ReactJS, SaSS/SCSS, Chakra UI on the
-        Front-End, and NodeJS, Express and MongoDB on the back end.
+        Development:{' '}
+        <Heading as="span" fontSize="sm" letterSpacing="wider">
+          VanillaJS + ES6, ReactJS, SaSS/SCSS, Chakra UI
+        </Heading>{' '}
+        on the Front-End, and{' '}
+        <Heading as="span" fontSize="sm" letterSpacing="wider">
+          NodeJS, Express and MongoDB
+        </Heading>{' '}
+        on the Back-end, and server-side rendering with{' '}
+        <Heading as="span" fontSize="sm" letterSpacing="wider">
+          Next.js
+        </Heading>{' '}
       </Text>
       <Heading as="h4" size="md" py={10}>
         Projects
       </Heading>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        <Project
+          title="Budget Tracker"
+          description="A budget tracking web app to help you maintain a healthy cash flow and stay on top of your finances. Track your spending and income in a simple and intuitive user interface. "
+          imageSrc="/inkdrop_eyecatch.png"
+          imageAlt="Budget Tracker"
+        />
+        <Project
+          title="Inkdrop"
+          description="A Markdown note-taking app with 100+ plugins, cross-platform and
+          encrypted data sync support. The life-time revenue is more than $300k."
+          imageSrc="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80"
+          imageAlt="InkDrop"
+        />
+        <Project
+          title="Inkdrop"
+          description="A Markdown note-taking app with 100+ plugins, cross-platform and
+          encrypted data sync support. The life-time revenue is more than $300k."
+          imageSrc="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80"
+          imageAlt="InkDrop"
+        />
+        <Project
+          title="Inkdrop"
+          description="A Markdown note-taking app with 100+ plugins, cross-platform and
+          encrypted data sync support. The life-time revenue is more than $300k."
+          imageSrc="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80"
+          imageAlt="InkDrop"
+        />
       </SimpleGrid>
       <Footer />
     </Container>

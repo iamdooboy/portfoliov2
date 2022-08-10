@@ -37,9 +37,8 @@ const Logo = () => {
             onMouseOut={() => setImage(punk)}
           />
           <Text
-            pt={2}
+            pt={3}
             color={useColorModeValue('white', 'whiteAlpha.900')}
-            fontFamily='M PLUS Rounded 1c", sans-serif'
             onMouseEnter={() => setImage(coolPunk)}
             onMouseOut={() => setImage(punk)}
           >

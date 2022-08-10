@@ -11,7 +11,7 @@ export const Project = ({ title, description, imageSrc, imageAlt }) => {
           fontWeight="bold"
           fontSize="xl"
         >
-          Inkdrop
+          {title}
         </chakra.h1>
         <chakra.p
           mt={1}
@@ -19,26 +19,17 @@ export const Project = ({ title, description, imageSrc, imageAlt }) => {
           color="gray.600"
           _dark={{ color: 'gray.400' }}
         >
-          A Markdown note-taking app with 100+ plugins, cross-platform and
-          encrypted data sync support. The life-time revenue is more than $300k.
+          {description}
         </chakra.p>
       </Box>
 
-      <Image
-        h={36}
-        w="full"
-        fit="cover"
-        mt={2}
-        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80"
-        alt="NIKE AIR"
-      />
+      <Image h={36} w="full" fit="cover" mt={2} src={imageSrc} alt={imageAlt} />
 
       <Flex
         alignItems="center"
         justifyContent="space-between"
         py={2}
-        bg="gray.900"
-        _dark={{ bg: '#011627' }}
+        bg="#2D3748"
         roundedBottom="lg"
         px={'auto'}
       >
