@@ -1,13 +1,18 @@
 import { extendTheme } from '@chakra-ui/react'
+import { mode } from '@chakra-ui/theme-tools'
 
 const theme = extendTheme({
+  styles: {
+    global: props => ({
+      body: {
+        bg: mode('#EDF3F8', '#1A202C')(props)
+      }
+    })
+  },
   fonts: {
     heading: `'Inter', sans-serif`,
     body: `'Inter', sans-serif`
   }
-  // shadows: {
-  //   base: 'rgba(60,66,87,0.075) 0px 7px 14px 0px,rgba(0,0,0,0.08) 0px 3px 6px 0px'
-  // }
 })
 
 export default theme

@@ -19,6 +19,7 @@ import {
 import { HamburgerIcon, SunIcon, MoonIcon, StarIcon } from '@chakra-ui/icons'
 import { Project } from '../components/project'
 import { Footer } from '../components/footer'
+import Banner from '../components/banner'
 
 const property = {
   imageUrl: 'https://bit.ly/2Z4KKcF',
@@ -40,8 +41,7 @@ const Page = () => {
       <Text>
         Hi, I'm Duy (doo-ee). I'm a Web Developer/Designer who enjoys crafting
         software that is maintainable, scalable, and easy to use. I've worked
-        with a wide variety of tools and frameworks. To avoid spreading myself
-        too thin and clutter, I focus on my favorites:
+        with a wide variety of tools and frameworks and focus on my favorites:
       </Text>
       <br />
       <Text>
@@ -68,12 +68,13 @@ const Page = () => {
       <Heading as="h4" size="md" py={10}>
         Projects
       </Heading>
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <SimpleGrid columns={[1, 1, 2]} spacingX={4} spacingY={4}>
         <Project
           title="Budget Tracker"
           description="A budget tracking web app to help you maintain a healthy cash flow and stay on top of your finances. Track your spending and income in a simple and intuitive user interface. "
           imageSrc="/inkdrop_eyecatch.png"
           imageAlt="Budget Tracker"
+          id="budgettracker"
         />
         <Project
           title="Inkdrop"
@@ -97,7 +98,6 @@ const Page = () => {
           imageAlt="InkDrop"
         />
       </SimpleGrid>
-      <Footer />
     </Container>
   )
 }

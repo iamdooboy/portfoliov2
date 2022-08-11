@@ -20,12 +20,7 @@ const Logo = () => {
   const [image, setImage] = useState(punk)
 
   return (
-    <Link
-      href="/"
-      scroll={false}
-      onMouseEnter={() => setImage(coolPunk)}
-      onMouseOut={() => setImage(punk)}
-    >
+    <Link href="/" scroll={false}>
       <a>
         <LogoBox>
           <Image
