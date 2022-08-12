@@ -48,6 +48,7 @@ import {
 import NavBar from './navbar'
 import { GridItem } from './grid-item'
 import { Footer } from './footer'
+import { Project } from './project'
 const section = () => {
   return (
     <Layout title="Budget Tracker">
@@ -58,39 +59,37 @@ const section = () => {
             return <WorkImage src={slide.image} />
           })}
         </Carousel>
-        <P>
+        <Text my={4}>
           A web app for visualizing personalized Spotify data. View your top
           artists, top tracks, recently played tracks, and detailed audio
           information about each track. Create and save new playlists of
           recommended tracks based on your existing playlists and more.
-        </P>
-        <HStack pt={4}>
+        </Text>
+        <HStack mt={4} mb={2} ml={-2}>
           <span>
-            <GridItem href="/" icon={<SiMongodb />}>
+            <GridItem href="/" icon={SiMongodb}>
               MongoDB
             </GridItem>
-            <GridItem href="/" icon={<SiExpress />}>
+            <GridItem href="/" icon={SiExpress}>
               ExpressJS
             </GridItem>
-            <GridItem href="/" icon={<SiReact />}>
+            <GridItem href="/" icon={SiReact}>
               React
             </GridItem>
-            <GridItem href="/" icon={<SiNodedotjs />}>
+            <GridItem href="/" icon={SiNodedotjs}>
               NodeJS
             </GridItem>
-            <GridItem href="/" icon={<SiMaterialui />}>
+            <GridItem href="/" icon={SiMaterialui}>
               Material UI
             </GridItem>
-            <GridItem href="/" icon={<SiVercel />}>
+            <GridItem href="/" icon={SiVercel}>
               Vercel
             </GridItem>
           </span>
         </HStack>
 
-        <Divider borderColor="lightgray" pt={4} />
-
-        <Flex align="center">
-          <HStack mt={3} spacing="15px" pb={4}>
+        <Flex align="center" my={4}>
+          <HStack mt={3} spacing="15px">
             <Button
               leftIcon={<ExternalLinkIcon />}
               colorScheme="teal"
@@ -107,6 +106,7 @@ const section = () => {
             </Button>
           </HStack>
         </Flex>
+        <Divider my={2} />
       </Container>
     </Layout>
   )

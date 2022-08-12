@@ -14,6 +14,7 @@ import {
 } from '@chakra-ui/react'
 import { SunIcon, MoonIcon } from '@chakra-ui/icons'
 import { IoLogoGithub } from 'react-icons/io5'
+import ThemeToggleButton from './theme-toggle-button'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -85,12 +86,7 @@ const Navbar = props => {
         </Stack>
 
         <Box flex={1} align="right">
-          <IconButton
-            aria-label="Toggle theme"
-            colorScheme={useColorModeValue('purple', 'orange')}
-            icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
-            onClick={toggleColorMode}
-          ></IconButton>
+          <ThemeToggleButton />
         </Box>
       </Container>
     </Box>

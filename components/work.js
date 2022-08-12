@@ -14,7 +14,7 @@ import { ChevronRightIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import { IoLogoGithub } from 'react-icons/io5'
 
 export const Title = ({ children }) => (
-  <Box>
+  <Box mb={4}>
     <NextLink href="/" passHref>
       <Link>Projects</Link>
     </NextLink>
