@@ -12,6 +12,21 @@ const theme = extendTheme({
   fonts: {
     heading: `'Inter', sans-serif`,
     body: `'Inter', sans-serif`
+  },
+  components: {
+    Heading: {
+      variants: {
+        'section-title': {
+          textDecoration: 'underline',
+          fontSize: 20,
+          textUnderlineOffset: 6,
+          textDecorationColor: '#525252',
+          textDecorationThickness: 4,
+          marginTop: 4,
+          marginBottom: 5
+        }
+      }
+    }
   }
 })
 

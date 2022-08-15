@@ -37,7 +37,7 @@ const Page = () => {
   return (
     <Layout>
       <Container>
-        <Heading as="h4" size="md" pb={5}>
+        <Heading as="h4" size="md" variant="section-title">
           About Me
         </Heading>
         <Text>
@@ -67,7 +67,7 @@ const Page = () => {
             Next.js
           </Heading>{' '}
         </Text>
-        <Heading as="h4" size="md" py={10}>
+        <Heading as="h4" size="md" pt={8} variant="section-title">
           Projects
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} spacingX={4} spacingY={4} mb={2}>
