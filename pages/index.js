@@ -70,7 +70,7 @@ const Page = () => {
         <Heading as="h4" size="md" pt={8} variant="section-title">
           Projects
         </Heading>
-        <SimpleGrid columns={[1, 1, 2]} spacingX={4} spacingY={4} mb={2}>
+        <SimpleGrid columns={[1, 2, 2]} spacingX={4} spacingY={4} mb={2}>
           <Project
             title="Budget Tracker"
             description="A budget tracking web app to help you maintain a healthy cash flow and stay on top of your finances. Track your spending and income in a simple and intuitive user interface. "
