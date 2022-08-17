@@ -16,7 +16,8 @@ const Banner = () => {
   return (
     <Box
       textAlign="center"
-      bg={useColorModeValue('#38434E', '#2D3748')}
+      bgGradient="linear(to-l, #485461 , #28313b)"
+      _dark={{ bg: '#2D3748' }}
       pt={16}
       color="white"
     >
