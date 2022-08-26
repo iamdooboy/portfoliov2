@@ -3,7 +3,6 @@ import NextLink from 'next/link'
 import Image from 'next/image'
 import {
   Box,
-  HStack,
   Heading,
   useColorModeValue,
   Center,
@@ -16,8 +15,7 @@ const Banner = () => {
   return (
     <Box
       textAlign="center"
-      bgGradient="linear(to-l, #485461 , #28313b)"
-      _dark={{ bg: '#2D3748' }}
+      bg={useColorModeValue('#283b57', '#2D3748')}
       pt={16}
       color="white"
     >

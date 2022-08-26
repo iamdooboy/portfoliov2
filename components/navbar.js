@@ -40,14 +40,13 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
 
 const Navbar = props => {
   const { path } = props
-  const { toggleColorMode } = useColorMode()
   return (
     <Box
       position="fixed"
       as="nav"
       w="100%"
-      bgGradient="linear(to-l, #485461 , #28313B)"
-      _dark={{ bg: '#2D3748' }}
+      bg={useColorModeValue('#283b57db', '#2d3748ba')}
+      css={{ backdropFilter: 'blur(10px)' }}
       zIndex={2}
       {...props}
     >
@@ -95,19 +94,20 @@ const Navbar = props => {
             <Menu isLazy>
               <MenuButton
                 as={IconButton}
-                icon={<HamburgerIcon />}
+                icon={
+                  <HamburgerIcon
+                    color={useColorModeValue('#fff', 'whiteAlpha.800')}
+                  />
+                }
                 variant="outline"
-                aria-label="Options"
+                borderColor={useColorModeValue(
+                  'RGBA(255, 255, 255, 0.36)',
+                  'RGBA(255, 255, 255, 0.16)'
+                )}
               />
               <MenuList>
                 <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
-                </NextLink>
-                <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
+                  <MenuItem as={Link}>Contact</MenuItem>
                 </NextLink>
                 <MenuItem
                   as={Link}
