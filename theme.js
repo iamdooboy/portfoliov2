@@ -4,6 +4,22 @@ import { mode } from '@chakra-ui/theme-tools'
 const theme = extendTheme({
   styles: {
     global: props => ({
+      html: {
+        overflow: 'overlay',
+        scrollbarColor: '#1A202C #0a192f',
+        '&::-webkit-scrollbar': {
+          w: '6px'
+        },
+        '&::-webkit-scrollbar-track': {
+          bg: 'transparent'
+        },
+        '&::-webkit-scrollbar-thumb': {
+          bgColor: mode('#BFBFBF', '#969595')(props),
+          border: '1px solid',
+          borderColor: mode('#BFBFBF', '#969595')(props),
+          borderRadius: '10px'
+        }
+      },
       body: {
         bg: mode('#EDF3F8', '#1A202C')(props)
       }
