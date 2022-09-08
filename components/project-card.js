@@ -11,7 +11,7 @@ import {
 import NextLink from 'next/link'
 import { motion } from 'framer-motion'
 
-export const Project = ({ title, description, imageSrc, imageAlt, id }) => {
+export const ProjectCard = ({ title, description, imageSrc, imageAlt, id }) => {
   return (
     <motion.div whileHover={{ scale: 1.03 }}>
       <Box

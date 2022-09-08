@@ -1,43 +1,26 @@
-import React from 'react'
-import {
-  Container,
-  Box,
-  Heading,
-  useColorModeValue,
-  SimpleGrid,
-  Divider,
-  Badge,
-  Image,
-  Text,
-  LinkBox,
-  LinkOverlay,
-  Icon,
-  createIcon,
-  HStack,
-  chakra,
-  Link,
-  Flex,
-  Button,
-  Center,
-  VStack,
-  Wrap,
-  WrapItem,
-  StackDivider,
-  AspectRatio
-} from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { IoLogoGithub } from 'react-icons/io5'
-import {
-  SiMongodb,
-  SiReact,
-  SiMaterialui,
-  SiNodedotjs,
-  SiExpress
-} from 'react-icons/si'
-import Section from '../components/section'
+import Layout from '../components/layouts/article'
+import Title from '../components/project/project-title'
+import Carousel from '../components/project/project-carousel'
+import Description from '../components/project/project-description'
+import Stack from '../components/project/project-stack'
+import Buttons from '../components/project/project-buttons'
+import { Container } from '@chakra-ui/react'
+import { projects } from '../projects'
 
 const budgetTracker = () => {
-  return <Section />
+  const { budgetTracker } = projects
+  const { title, images, description, stack, host, git } = budgetTracker
+  return (
+    <Layout title="Budget Tracker">
+      <Container>
+        <Title title={title} />
+        <Carousel images={images} />
+        <Description description={description} />
+        <Stack stackArr={stack} />
+        <Buttons host={host} git={git} />
+      </Container>
+    </Layout>
+  )
 }
 
 export default budgetTracker

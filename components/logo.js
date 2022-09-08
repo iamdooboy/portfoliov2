@@ -14,8 +14,6 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  // const avatar = '/punk.png'
-  // const avatar2 = '/punk_with_glasses.png'
   const avatar = '/notion_no_bg.png'
   const avatar2 = './notion_no_bg (1).png'
 
@@ -33,7 +31,7 @@ const Logo = () => {
             src={image}
             onMouseEnter={() => setImage(avatar2)}
             onMouseOut={() => setImage(avatar)}
-            color="white"
+            opacity={useColorModeValue('1', '.92')}
           />
           <Text
             pt={3}
