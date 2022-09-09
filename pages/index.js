@@ -2,6 +2,7 @@ import React from 'react'
 import { ProjectCard } from '../components/project-card'
 import Layout from '../components/layouts/article'
 import { Container, Heading, SimpleGrid, Text } from '@chakra-ui/react'
+import { projects } from '../projects'
 
 const Page = () => {
   return (
@@ -41,34 +42,16 @@ const Page = () => {
           Projects
         </Heading>
         <SimpleGrid columns={[1, 2, 2]} spacingX={4} spacingY={4} mb={2}>
-          <ProjectCard
-            title="Budget Tracker"
-            description="A budget tracking web app to help you maintain a healthy cash flow and stay on top of your finances. Track your spending and income in a simple and intuitive user interface. "
-            imageSrc="/inkdrop_eyecatch.png"
-            imageAlt="Budget Tracker"
-            id="budgettracker"
-          />
-          <ProjectCard
-            title="Japan Gallery"
-            description="A Markdown note-taking app with 100+ plugins, cross-platform and
-          encrypted data sync support. The life-time revenue is more than $300k."
-            imageSrc="/projects/japan-gallery/thumbnail.jpg"
-            imageAlt="Japan Gallery"
-          />
-          <ProjectCard
-            title="Inkdrop"
-            description="A Markdown note-taking app with 100+ plugins, cross-platform and
-          encrypted data sync support. The life-time revenue is more than $300k."
-            imageSrc="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80"
-            imageAlt="InkDrop"
-          />
-          <ProjectCard
-            title="Inkdrop"
-            description="A Markdown note-taking app with 100+ plugins, cross-platform and
-          encrypted data sync support. The life-time revenue is more than $300k."
-            imageSrc="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80"
-            imageAlt="InkDrop"
-          />
+          {Object.keys(projects).map((key, index) => (
+            <ProjectCard
+              key={index}
+              title={projects[key].title}
+              description={projects[key].shortDescription}
+              imageSrc={projects[key].thumbnail}
+              imageAlt={projects[key].imageAlt}
+              id={projects[key].id}
+            />
+          ))}
         </SimpleGrid>
       </Container>
     </Layout>

@@ -6,7 +6,8 @@ import {
   chakra,
   Badge,
   LinkBox,
-  LinkOverlay
+  LinkOverlay,
+  useColorModeValue
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import { motion } from 'framer-motion'
@@ -20,6 +21,8 @@ export const ProjectCard = ({ title, description, imageSrc, imageAlt, id }) => {
         _dark={{ bg: '#2D3748' }}
         shadow="lg"
         rounded="lg"
+        borderWidth="1px"
+        borderColor={useColorModeValue('#d4d4d496', '#52525287')}
       >
         <NextLink href={`/${id}`} passHref scroll={false}>
           <LinkBox cursor="pointer">

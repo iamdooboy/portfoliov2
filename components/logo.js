@@ -14,10 +14,10 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  const avatar = '/notion_no_bg.png'
-  const avatar2 = './notion_no_bg (1).png'
+  const logo = '/logo.png'
+  const logo2 = '/logo2.png'
 
-  const [image, setImage] = useState(avatar)
+  const [image, setImage] = useState(logo)
 
   return (
     <Link href="/" scroll={false}>
@@ -29,15 +29,15 @@ const Logo = () => {
             height={'40px'}
             alt="logo"
             src={image}
-            onMouseEnter={() => setImage(avatar2)}
-            onMouseOut={() => setImage(avatar)}
+            onMouseEnter={() => setImage(logo2)}
+            onMouseOut={() => setImage(logo)}
             opacity={useColorModeValue('1', '.92')}
           />
           <Text
             pt={3}
             color={useColorModeValue('white', 'whiteAlpha.900')}
-            onMouseEnter={() => setImage(avatar2)}
-            onMouseOut={() => setImage(avatar)}
+            onMouseEnter={() => setImage(logo2)}
+            onMouseOut={() => setImage(logo)}
           >
             Duy Le
           </Text>
