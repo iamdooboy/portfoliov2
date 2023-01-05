@@ -9,7 +9,6 @@ import {
   Heading,
   Flex,
   IconButton,
-  useColorMode,
   useColorModeValue,
   Menu,
   MenuItem,
@@ -78,6 +77,15 @@ const Navbar = props => {
           </LinkItem>
           <LinkItem
             target="_blank"
+            href="/resume.pdf"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            Resume
+          </LinkItem>
+          <LinkItem
+            target="_blank"
             href="https://github.com/iamdooboy/portfoliov2"
             path={path}
             display="inline-flex"
@@ -111,9 +119,12 @@ const Navbar = props => {
                 <NextLink href="/contact" passHref>
                   <MenuItem as={Link}>Contact</MenuItem>
                 </NextLink>
+                <NextLink href="/resume.pdf" passHref>
+                  <MenuItem as={Link}>Resume</MenuItem>
+                </NextLink>
                 <MenuItem
                   as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
+                  href="https://github.com/iamdooboy/portfoliov2"
                 >
                   View Source
                 </MenuItem>

@@ -7,11 +7,11 @@ import Buttons from '../components/project/project-buttons'
 import { Container } from '@chakra-ui/react'
 import { projects } from '../projects'
 
-const motionGallery = () => {
-  const { motionGallery } = projects
-  const { title, images, description, stack, host, git } = motionGallery
+const PokemonReviews = () => {
+  const { pokemonReview } = projects
+  const { title, images, description, stack, host, git } = pokemonReview
   return (
-    <Layout title="Motion Gallery">
+    <Layout title="Pokemon Reviews">
       <Container>
         <Title title={title} />
         <Carousel images={images} />
@@ -23,4 +23,4 @@ const motionGallery = () => {
   )
 }
 
-export default motionGallery
+export default PokemonReviews

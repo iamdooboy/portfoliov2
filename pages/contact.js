@@ -1,16 +1,4 @@
-import NextLink from 'next/link'
-import {
-  Box,
-  Heading,
-  Text,
-  Container,
-  Divider,
-  Button,
-  Image,
-  Input,
-  Textarea,
-  useColorModeValue
-} from '@chakra-ui/react'
+import { Heading, Text, Container } from '@chakra-ui/react'
 import HookForm from '../components/HookForm'
 
 const Contact = () => {

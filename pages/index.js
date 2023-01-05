@@ -12,9 +12,10 @@ const Page = () => {
           About Me
         </Heading>
         <Text>
-          Hi, I'm Duy (doo-ee). I'm a Web Developer/Designer who enjoys crafting
-          software that is maintainable, scalable, and easy to use. I've worked
-          with a wide variety of tools and frameworks and focus on my favorites:
+          Hi, I&apos;m Duy (doo-ee). I&apos;m a Web Developer/Designer who
+          enjoys crafting software that is maintainable, scalable, and easy to
+          use. I&apos;ve worked with a wide variety of tools and frameworks and
+          focus on my favorites:
         </Text>
         <br />
         <Text>

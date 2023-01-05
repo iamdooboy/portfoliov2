@@ -1,11 +1,5 @@
 import Head from 'next/head'
-import {
-  Box,
-  Container,
-  Heading,
-  useColorModeValue,
-  Divider
-} from '@chakra-ui/react'
+import { Box, Container, useColorModeValue } from '@chakra-ui/react'
 import NavBar from '../navbar'
 import Banner from '../banner'
 import { Footer } from '../footer'
