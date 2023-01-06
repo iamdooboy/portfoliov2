@@ -12,10 +12,12 @@ const Page = () => {
           About Me
         </Heading>
         <Text>
-          Hi, I&apos;m Duy (doo-ee). I&apos;m a Web Developer/Designer who
-          enjoys crafting software that is maintainable, scalable, and easy to
-          use. I&apos;ve worked with a wide variety of tools and frameworks and
-          focus on my favorites:
+          Hi, I&apos;m Duy (doo-ee). As a web developer and designer, I am
+          passionate about creating software that is well-designed, efficient,
+          and user-friendly. With experience in a diverse range of tools and
+          frameworks, I have the skills and expertise to tackle any project. I
+          take pride in my ability to produce high-quality, scalable, and
+          maintainable solutions for my clients.
         </Text>
         <br />
         <Text>
@@ -28,15 +30,16 @@ const Page = () => {
         <Text>
           Development:{' '}
           <Heading as="span" fontSize="sm" letterSpacing="wider">
-            VanillaJS + ES6, ReactJS, SaSS/SCSS, Chakra UI
+            VanillaJS + ES6, React, SaSS/SCSS, Chakra UI, SWR, Redux Toolkit,
+            and Framer Motion
           </Heading>{' '}
           on the Front-End, and{' '}
           <Heading as="span" fontSize="sm" letterSpacing="wider">
-            NodeJS, Express and MongoDB
+            NodeJS, Express and MongoDB, and Postgres
           </Heading>{' '}
           on the Back-end, and server-side rendering with{' '}
           <Heading as="span" fontSize="sm" letterSpacing="wider">
-            Next.js
+            NextJS
           </Heading>{' '}
         </Text>
         <Heading as="h4" size="md" pt={8} variant="section-title">

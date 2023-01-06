@@ -72,5 +72,27 @@ export const projects = {
     thumbnail: '/projects/pokemon-reviews/thumbnail.png',
     imageAlt: 'Pokemon-Reviews',
     id: 'pokemonReviews'
+  },
+  ComingSoom: {
+    title: 'A new project',
+    images: [
+      '/projects/pokemon-reviews/1.png',
+      '/projects/pokemon-reviews/2.png',
+      '/projects/pokemon-reviews/3.png',
+      '/projects/pokemon-reviews/4.png',
+      '/projects/pokemon-reviews/5.png',
+      '/projects/pokemon-reviews/6.png',
+      '/projects/pokemon-reviews/7.png',
+      '/projects/pokemon-reviews/8.png'
+    ],
+    description: 'Gathering ideas for a new project',
+    stack: ['React'],
+    host: 'localhost',
+    git: 'https://github.com/',
+    shortDescription:
+      "I'm currently gathering ideas for a new project. Check back soon for a special surprise",
+    thumbnail: '/soon.png',
+    imageAlt: 'temp',
+    id: 'new-project'
   }
 }
