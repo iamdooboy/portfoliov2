@@ -1,17 +1,6 @@
 import NextLink from 'next/link'
-import {
-  Heading,
-  Box,
-  Image,
-  Link,
-  Badge,
-  HStack,
-  Button,
-  Spacer,
-  Flex
-} from '@chakra-ui/react'
-import { ChevronRightIcon, ExternalLinkIcon } from '@chakra-ui/icons'
-import { IoLogoGithub } from 'react-icons/io5'
+import { Heading, Box, Image, Link, Badge, Spacer } from '@chakra-ui/react'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 
 export const Title = ({ children }) => (
   <Box mb={4}>

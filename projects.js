@@ -12,7 +12,7 @@ export const projects = {
       '/projects/budget-tracker/8.png'
     ],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+      'A fullstack application with user authentication, full CRUD functionalities, filtering, and routing. This app let’s user create simple lists of budgets, expenses, and incomes and view their spending summary.',
     stack: ['MongoDB', 'Express', 'React', 'NodeJS', 'Material UI', 'Vercel'],
     host: 'https://expense-app-client-seven.vercel.app/',
     git: 'https://github.com/iamdooboy/expense-app-client',
@@ -44,18 +44,55 @@ export const projects = {
   pokemonReview: {
     title: 'Pokemon Reviews',
     images: [
-      '/projects/pokemon-reviews/thumbnail.jpg',
-      '/projects/pokemon-reviews/1.jpg'
+      '/projects/pokemon-reviews/1.png',
+      '/projects/pokemon-reviews/2.png',
+      '/projects/pokemon-reviews/3.png',
+      '/projects/pokemon-reviews/4.png',
+      '/projects/pokemon-reviews/5.png',
+      '/projects/pokemon-reviews/6.png',
+      '/projects/pokemon-reviews/7.png',
+      '/projects/pokemon-reviews/8.png'
     ],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
-    stack: ['NextJS', 'Prism', 'Chakra UI', 'Vercel', 'Supabase'],
+      'A fullstack application that allow users to register/login with a magic link, search for and review various pokemon, favorite each pokemon and each others’ reviews. Think of Yelp but for Pokemon',
+    stack: [
+      'NextJS',
+      'Prisma',
+      'Chakra UI',
+      'Vercel',
+      'Supabase',
+      'SWR',
+      'NextAuth',
+      'Expresss'
+    ],
     host: 'https://pokemon-reviews.vercel.app/',
     git: 'https://github.com/iamdooboy/pokemon-reviews',
     shortDescription:
-      'A place to leave reviews on your favorite/least favorite pokemon and read other peoples review [In Progress]',
-    thumbnail: '/projects/pokemon-reviews/thumbnail.jpg',
+      'A place to leave reviews on your favorite/least favorite pokemon and read other peoples review',
+    thumbnail: '/projects/pokemon-reviews/thumbnail.png',
     imageAlt: 'Pokemon-Reviews',
-    id: 'pokemonreviews'
+    id: 'pokemonReviews'
+  },
+  ComingSoom: {
+    title: 'A new project',
+    images: [
+      '/projects/pokemon-reviews/1.png',
+      '/projects/pokemon-reviews/2.png',
+      '/projects/pokemon-reviews/3.png',
+      '/projects/pokemon-reviews/4.png',
+      '/projects/pokemon-reviews/5.png',
+      '/projects/pokemon-reviews/6.png',
+      '/projects/pokemon-reviews/7.png',
+      '/projects/pokemon-reviews/8.png'
+    ],
+    description: 'Gathering ideas for a new project',
+    stack: ['React'],
+    host: 'localhost',
+    git: 'https://github.com/',
+    shortDescription:
+      "I'm currently gathering ideas for a new project. Check back soon for a special surprise",
+    thumbnail: '/soon.png',
+    imageAlt: 'temp',
+    id: 'new-project'
   }
 }

@@ -55,28 +55,28 @@ export default function HookForm() {
     })
   }
 
+  const borderColor = useColorModeValue('gray.400', 'inherit')
+
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      {data.map(element => {
-        return (
-          <FormControl isInvalid={errors[element.id]}>
-            <Heading my={3} as="h4" size="md">
-              {element.heading}
-            </Heading>
-            <Input
-              id={element.id}
-              borderRadius={3}
-              borderColor={useColorModeValue('gray.400', 'inherit')}
-              placeholder={element.placeholder}
-              size="lg"
-              {...register(element.id, element.registerProps)}
-            />
-            <FormErrorMessage>
-              {errors[element.id] && errors[element.id].message}
-            </FormErrorMessage>
-          </FormControl>
-        )
-      })}
+      {data.map(element => (
+        <FormControl key={element.id} isInvalid={errors[element.id]}>
+          <Heading my={3} as="h4" size="md">
+            {element.heading}
+          </Heading>
+          <Input
+            id={element.id}
+            borderRadius={3}
+            borderColor={borderColor}
+            placeholder={element.placeholder}
+            size="lg"
+            {...register(element.id, element.registerProps)}
+          />
+          <FormErrorMessage>
+            {errors[element.id] && errors[element.id].message}
+          </FormErrorMessage>
+        </FormControl>
+      ))}
       <FormControl isInvalid={errors.message}>
         <Heading my={3} as="h4" size="md">
           Message

@@ -1,5 +1,3 @@
-import Logo from './logo'
-import NextLink from 'next/link'
 import Image from 'next/image'
 import {
   Box,
